@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const port  = 3000;
 
-const filmsRoutes = require('./routes/films.routes')
+const filmsRoutes = require('./routes/films')
 
-app.use('/',filmsRoutes);
+app.use('/api/film', filmsRoutes);
 
 
 app.listen(port,()=> {
